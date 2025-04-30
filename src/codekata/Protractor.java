@@ -1,4 +1,21 @@
 package codekata;
 
 public class Protractor {
+    public int solution(int angle) {
+
+        // 각도기 구현
+        while (angle > 0 && angle <= 180) {
+            int answer = 0;
+            if (angle > 0 && angle < 90) {
+                return 1;
+            } else if (angle == 90) {
+                return 2;
+            } else if (angle > 90 && angle < 180) {
+                return 3;
+            } else if (angle == 180) {
+                return 4;
+            }
+        }
+        return 0;
+    }
 }

@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class SumOfEven {
+    public int solution(int n) { // n == 11
+        int answer = 0;
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 == 0) {
+                answer += i; //
+            }
+        }
+        return answer;
+    }
+}
